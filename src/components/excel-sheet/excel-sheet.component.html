@@ -1,0 +1,17 @@
+<div clsss="excel-container">
+    <table>
+        <tr>
+            <th></th>
+            <th *ngFor="let header of rowHeader">{{header}}</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let rows of excelData.rows; index as rowInd">
+                <td>{{rowInd + 1}} </td>
+                <td *ngFor="let cols of excelData.columns; index as colInd">
+                    <input type="number" value="{{test}}" (keyup)="excelBox($event,rowInd,colInd)" />
+                </td>
+            </tr>
+            <button (click)="add()">+</button>
+        </tbody>
+    </table>
+</div>

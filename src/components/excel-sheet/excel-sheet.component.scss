@@ -1,0 +1,16 @@
+.excel-container {
+    min-width: 500px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+th , td {
+    width: 80px;
+    height: 30px;
+    // border: 1px solid black;
+}
+
+input {
+    height: 30px;
+}
